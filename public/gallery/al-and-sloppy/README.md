@@ -1,0 +1,5 @@
+# Al & Sloppy gallery
+
+Upload Al & Sloppy photos into this folder. Supported image formats: jpg, jpeg, png, webp, gif, avif.
+
+The That Time Again Studios website reads this folder from GitHub, so newly committed images appear in the Al & Sloppy gallery automatically.
