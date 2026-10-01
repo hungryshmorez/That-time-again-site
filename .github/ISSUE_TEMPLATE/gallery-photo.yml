@@ -1,0 +1,39 @@
+name: Gallery photo submission
+description: Submit one or more photos for a That Time Again Studios series gallery.
+title: "Gallery photo: "
+labels: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Upload your photo(s) below. A maintainer reviews submissions before they appear in the public gallery.
+  - type: dropdown
+    id: series
+    attributes:
+      label: Series
+      options:
+        - Al & Sloppy
+        - Channel 86
+        - That Time Again Records
+    validations:
+      required: true
+  - type: textarea
+    id: photos
+    attributes:
+      label: Photos
+      description: Drag image files into this box. GitHub will attach them to the issue.
+      placeholder: Drag one or more images here…
+    validations:
+      required: true
+  - type: input
+    id: credit
+    attributes:
+      label: Credit / caption (optional)
+      placeholder: Photographer, artist, scene, or short note
+  - type: checkboxes
+    id: rights
+    attributes:
+      label: Permission
+      options:
+        - label: I have permission to submit these images for display in this gallery.
+          required: true
